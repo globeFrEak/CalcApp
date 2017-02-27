@@ -1,0 +1,74 @@
+﻿/*!
+*CalcApp Styles
+*/
+
+body {
+    background-color: $gray-lighter;
+    height: 100%;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding: 0 15px;
+      
+}
+
+.navbar-inverse {
+    background-color: $gray-dark;
+}
+
+/* Result Styles*/
+.list-group-item {
+    .list-group-item-heading {
+         font-weight: bold;    
+    }
+    .list-group-item-text {
+        color: lightslategray;
+        word-break: break-all;
+        padding-right: 40px;
+
+        &.text-danger {
+            font-size: 1em;
+        }                
+    }
+    .badge {
+        position: absolute;
+        right: 1em;
+        top: 2.8em;
+        }
+    .calc_btn_danger {
+        color: $brand-danger;
+    }
+    .insert_result{
+        background-color: white;
+        border-color: $btn-default-border;
+        margin-right: .5em;
+    }
+}
+
+/* Calc Styles */
+
+@keyframes pulse { 
+  100% { background-color: white; }
+}
+
+button.btn.calc.closereq.required { 
+    @extend .alert-danger;   
+    animation: pulse 2s ease-in-out 99;       
+}
+
+.text-italic {
+    font-style:italic;
+}
+
+#footer {
+    margin-top: 20px;
+    background-color: $gray-dark;
+    border-radius: 4px;
+    .container{
+        h5{
+            margin: 1em 0;
+            color: $navbar-default-brand-color;
+        }
+    }
+}
