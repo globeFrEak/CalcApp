@@ -1,2 +1,2 @@
 # CalcApp
-Calculation / Taschenrechner App
+###Calculator App / Taschenrechner
