@@ -8,6 +8,10 @@ namespace CalcApp.Models
 {
     public class CalculationContext : DbContext
     {
+        public CalculationContext(): base("name=CalcAppDB")
+        {
+
+        }
         public DbSet<Item> Items { get; set; }
     }
 }
